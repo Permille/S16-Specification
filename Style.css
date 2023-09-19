@@ -1,0 +1,195 @@
+html{
+  scrollbar-gutter: stable;
+}
+
+body{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  margin: 0;
+}
+nav{
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+nav > div{
+  width: min(100%, 1400px);
+  margin: auto;
+  justify-content: left;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+header{
+  flex-grow: 0;
+  flex-shrink: 1;
+  background-color: #3f3f3f;
+  border-block: 1px solid #7f7f7f;
+}
+header > div{
+  width: min(100%, 1400px);
+  margin: auto;
+  flex-direction: row;
+  justify-content: left;
+  display: flex;
+  flex-flow: row;
+}
+main{
+  margin: auto;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: min(100%, 1400px);
+  display: flex;
+  flex-flow: row;
+}
+#Sidebar{
+  flex-basis: content;
+  width: 23%;
+  min-width: 23%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#Content{
+  flex-basis: content;
+  width: 77%;
+  min-width: 77%;
+  padding-top: 20px;
+}
+#SearchFiles{
+  all: unset;
+  width: calc(100% - 50px);
+  margin-block: 15px 10px;
+  padding: 5px;
+  border: 1px solid #9f9f9f;
+  color: #ffffff;
+}
+
+#SiteMap *{
+  user-select: none;
+}
+
+#SiteMap > div{
+  margin-block: 4px;
+  overflow: hidden;
+}
+#SiteMap > div > p{
+  padding: 5px 10px;
+  margin: 0;
+  background-color: #373737;
+  display: block;
+  transition: background-color .3s ease;
+}
+#SiteMap > div > p:hover{
+  padding: 5px 10px;
+  margin: 0;
+  background-color: #5f5f5f;
+  display: block;
+  cursor: pointer;
+}
+
+#SiteMap > div > div{
+  display: none;
+  margin-top: 2px;
+}
+#SiteMap > div.Open > div{
+  display: block;
+}
+#SiteMap > div > div > p{
+  margin: 0px;
+  padding-block: 5px;
+  padding-left: 25px;
+  background-color: #1f1f1f;
+  transition: background-color .3s ease;
+}
+#SiteMap > div > div > p:hover{
+  background-color: #2f2f2f;
+  cursor: pointer;
+}
+
+
+
+nav > div > *{
+  display: block;
+}
+nav > div > h2{
+  margin: 10px;
+}
+nav > div > a{
+  text-decoration: none;
+  margin: 3px;
+  padding: 10px;
+}
+nav > div > a,
+nav > div > a:link,
+nav > div > a:visited{
+  color: #dfdfdf;
+}
+nav > div > a:hover {
+  color: #c7c7c7;
+  background-color: #3f3f3f;
+}
+nav > div > a:active {
+  color: #afafaf;
+}
+
+
+
+
+
+header > div > a{
+  display: block;
+  margin-block: 5px;
+  margin-left: 10px;
+}
+header > div > a + a::before{
+  content: ">";
+  margin-right: 10px;
+  color: #dfdfdf !important;
+}
+header > div > a{
+  text-decoration: none;
+}
+header > div > a,
+header > div > a:link,
+header > div > a:visited{
+  color: #dfdfdf;
+}
+header > div > a:hover {
+  color: #c7c7c7;
+}
+header > div > a:active {
+  color: #afafaf;
+}
+
+
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 27px;
+}
+h3{
+  font-size: 24px;
+}
+h4{
+  font-size: 22px;
+}
+h5{
+  font-size: 20px;
+}
+h6{
+  font-size: 19px;
+}
+main > h1{
+  font-size: 40px;
+}
+
+p{
+  font-size: 18px;
+}

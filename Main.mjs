@@ -17,6 +17,11 @@ app.get("/Style.css", async function(req, res){
     "Content-Type": "text/css"
   }).end(await fs.readFile("./Style.css", {"encoding": "utf8"}));
 });
+app.get("/Scrollbars.css", async function(req, res){
+  res.writeHead(200, {
+    "Content-Type": "text/css"
+  }).end(await fs.readFile("./Scrollbars.css", {"encoding": "utf8"}));
+});
 app.get("/ClientMain.mjs", async function(req, res){
   res.writeHead(200, {
     "Content-Type": "application/javascript"
