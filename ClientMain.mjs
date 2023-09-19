@@ -13,6 +13,10 @@ async function LoadPage(Path){
   document.querySelector("#Content").innerHTML = Text;
   
   document.querySelector("header > div").innerHTML = ["Specification", ...Path.split("/")].map(i => `<a>${i}</a>`).join("");
+
+  const Params = new URLSearchParams(window.location.search);
+  Params.set("page", Path);
+  window.history.pushState(null, "", window.location.pathname + "?" + Params);
 }
 
 const Sections = [
