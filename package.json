@@ -1,0 +1,23 @@
+{
+  "name": "s16-specification",
+  "version": "1.0.0",
+  "description": "A rewritten specification for the Sigma16 fantasy assembly language with the aim to make it clearer and easier to browse.",
+  "main": "index.js",
+  "scripts": {
+    "server": "node Main.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Permille/S16-Specification.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Permille/S16-Specification/issues"
+  },
+  "homepage": "https://github.com/Permille/S16-Specification#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "marked": "^9.0.3"
+  }
+}
