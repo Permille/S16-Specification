@@ -63,7 +63,7 @@ main{
 }
 #SearchFiles{
   all: unset;
-  width: calc(100% - 50px);
+  width: calc(100% - 12px);
   margin-block: 15px 10px;
   padding: 5px;
   border: 1px solid #9f9f9f;
